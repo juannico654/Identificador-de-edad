@@ -1,0 +1,30 @@
+Algoritmo Identificador_edad
+	auxV=0
+	auxIN=0
+	AuxINC=0
+	Repetir
+		Escribir "ingrese su edad o para finalizar == 0"
+		Escribir ""
+		leer edad
+		si edad >=18 y edad <=55 Entonces
+			Escribir "usuario valido"
+			auxV=auxV+1
+		SiNo
+			si edad >18 y edad <55 Entonces
+				Escribir "usuario invalido"
+				auxIN=auxIN+1
+			SiNo
+				si edad >=0 y edad<=99 Entonces
+					Escribir "usuario incorrecto"
+					AuxINC=AuxINC+1
+				SiNo
+					Escribir "usuario valido:",auxV
+					Escribir "usuario invalido;",auxIN
+					Escribir "usuario incorrecto:",AuxINC
+				FinSi
+			FinSi
+		FinSi
+		Esperar Tecla
+		Limpiar Pantalla
+	Hasta Que edad==x
+FinAlgoritmo
